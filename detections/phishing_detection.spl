@@ -1,0 +1,7 @@
+index=phishing
+| rex field=_raw "From:\s(?<from>.*)"
+| rex field=_raw "To:\s(?<to>.*)"
+| rex field=_raw "Subject:\s(?<subject>.*)"
+| search subject="*password*" OR subject="*verify*" OR subject="*urgent*" OR subject="*reset*" OR subject="*alert*" OR subject="*action*"
+| stats count by from, to, subject
+| sort - count
