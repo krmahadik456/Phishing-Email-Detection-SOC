@@ -41,7 +41,7 @@ index=phishing | stats count
 
 **Result:** 6 events loaded successfully
 
-📸 **Screenshot:** `screenshots/01_data_ingest.png`
+![Data Ingest](screenshots/01_data_ingest.png)
 
 ---
 
@@ -57,7 +57,7 @@ index=phishing
 | table _time, from, to, subject
 ```
 
-📸 **Screenshot:** `screenshots/02_field_extraction.png`
+![Field Extraction](screenshots/02_field_extraction.png)
 
 ---
 
@@ -72,7 +72,7 @@ index=phishing
 | sort - count
 ```
 
-📸 **Screenshot:** `screenshots/03_top_senders.png`
+![Top Senders](screenshots/03_top_senders.png)
 
 ---
 
@@ -88,7 +88,7 @@ index=phishing
 | sort - count
 ```
 
-📸 **Screenshot:** `screenshots/04_suspicious_subjects.png`
+![Suspicious Subjects](screenshots/04_suspicious_subjects.png)
 
 ---
 
@@ -104,7 +104,7 @@ index=phishing
 | sort - count
 ```
 
-📸 **Screenshot:** `screenshots/05_suspicious_domains.png`
+![Suspicious Domains](screenshots/05_suspicious_domains.png)
 
 ---
 
@@ -119,7 +119,7 @@ Built a complete phishing detection dashboard with 4 panels:
 | Suspicious Subjects | Bar Chart | Detect malicious keywords |
 | Suspicious Domains | Table | Identify spoofed domains |
 
-📸 **Screenshot:** `screenshots/06_dashboard.png`
+![Dashboard](screenshots/06_dashboard.png)
 
 ---
 
